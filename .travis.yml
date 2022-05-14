@@ -3,6 +3,7 @@ sudo: required
 services: docker
 
 before_install:
+  - docker login -u takmastakmas -p 9f82a1a5-f157-4e71-8ff0-0fe673a58c32
   - docker-compose up --build -d
 
 script:
